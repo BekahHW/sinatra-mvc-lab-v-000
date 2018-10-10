@@ -5,7 +5,7 @@ class PigLatinizer
     
     vowels = ["a", "e", "i", "o", "u"]
     three_blend= ["thr", "sch", "squ", "spr"]
-    two_blend = ["ch", "sh", "qu", "th", "br", "pl", "pr", "sk"]
+    two_blend = ["ch", "sh", "qu", "th", "br", "pl", "pr", "sk", "wh"]
        if vowels.include? words.downcase[0]
            v = words << 'way'
            v
