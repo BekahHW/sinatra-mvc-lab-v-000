@@ -13,7 +13,7 @@ class PigLatinizer
               first_three = words.slice!(0,3)
               three = words << first_three << 'ay'
               three
-       elsif  two_blend.include? words[0] + words[1]
+       elsif  two_blend.include? words.downcase[0] + words[1]
               first_two = words.slice!(0,2)
               words << first_two << 'ay'
        else    
